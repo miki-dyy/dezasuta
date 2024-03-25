@@ -46,6 +46,25 @@ nav > ul{
 
 @media screen and (max-width:767px)
  {
-    ul{flex-direction: column;
-    gap: 10px;}
+    .header{
+       display: block;
+        margin: 30px;
+        text-align: left;
+    }
+
+.header ul{
+    display: block;
+    text-align: left;
+    padding-left: 0px;
+    margin: 20px;
+
 }
+
+    .header li{
+        padding: 20px;
+        text-align: left;
+border-bottom: 1px  solid #000;
+    }
+
+}
+
