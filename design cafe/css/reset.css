@@ -13,7 +13,10 @@ h3,
 ul,
 li,
 p,
-dl {
+dl,
+dt,
+dd,
+figure {
     margin: 0;
     padding: 0;
     line-height: 1;
