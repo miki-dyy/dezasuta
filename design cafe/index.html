@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -28,10 +29,26 @@
                 </ul>
             </nav>
         </div>
+
+        <div class="hamburger">
+            <span></span>
+        </div>
+        <nav class="header_nav-sp">
+            <ul>
+                <li><a href="#aboutus">ABOUT US</a></li>
+                <li><a href="#menu">MENU</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#event">EVENT</a></li>
+                <li><a href="#access">ACCESS</a></li>
+            </ul>
+        </nav>
     </header>
 
     <div class="slider">
-        <img src="./images/pc_first-100.jpg" alt="カフェ店内の様子">
+        <picture>
+            <source srcset="images/sp_main_vs@2x-100.jpg" media="(max-width : 767px)">
+            <img src="./images/pc_first-100.jpg" alt="カフェ店内の様子">
+        </picture>
     </div>
 
     <main>
@@ -47,9 +64,20 @@
 
 
         <section class="aboutus wrapper">
-            <figure><img src="./1x/about us_1-50.jpg" alt="乾杯してる写真"></figure>
+            <figure>
+                <picture>
+                    <source srcset="./images/about_us@2x.png" media="(max-width : 767px)">
+                    <img src="./images/pc_about-100.jpg" alt="乾杯してる写真">
+                </picture>
+            </figure>
+
             <div class="right">
-                <p class="maintitle"><img src="./images/about_us@2x.png" alt="Aboutusタイトル"></p>
+                <p class="maintitle">
+                    <picture>
+                        <source srcset="images/about_us@2x-100.jpg" media="(max-width : 767px)">
+                        <img src="./images/about_us@2x.png" alt="Aboutusタイトル">
+                    </picture>
+                </p>
 
                 <p class="subtitle">
                     私たちが提供する<br>
@@ -77,27 +105,27 @@
 
             <ul>
                 <li>
-                    <img src="./1x/Drink-50.jpg" alt="ドリンク">
+                    <img src="./images/drink_sp@2x-100.jpg" alt="ドリンク">
                     <h3>Drink</h3>
-                    <p>ドリンクメニューの概要を100文字程度で<br>
-                        紹介します。素材やこだわりなどをアピー<br>
+                    <p>ドリンクメニューの概要を100文字程度で
+                        紹介します。素材やこだわりなどをアピー
                         ルしていきます。</p>
                 </li>
                 <li>
-                    <img src="./1x/Food-50.jpg" alt="フード">
+                    <img src="./images/food_sp@2x-100.jpg" alt="フード">
                     <h3>Food</h3>
                     <p>
-                        フードメニューの概要を100文字程度で紹<br>
-                        介します。素材やこだわりなどをアピールし<br>
+                        フードメニューの概要を100文字程度で紹
+                        介します。素材やこだわりなどをアピールし
                         ていきます。
                     </p>
                 </li>
                 <li>
-                    <img src="./1x/Sweets-50.jpg" alt="スイーツ">
+                    <img src="./images/cake_sp@2x-100.jpg" alt="スイーツ">
                     <h3>Sweets</h3>
                     <p>
-                        スイーツメニューの概要を100文字程度で<br>
-                        紹介します。素材やこだわりなどをアピー<br>
+                        スイーツメニューの概要を100文字程度で
+                        紹介します。素材やこだわりなどをアピー
                         ルしていきます。
                     </p>
                 </li>
@@ -158,6 +186,14 @@
     </div>
     </div>
 
+    <script>
+        $(function () {
+            $(".hamburger").on("click", function () {
+                $(".hamburger").toggleClass("open");
+                $(".header_nav-sp").fadeToggle();
+            });
+        });
+    </script>
 </body>
 
 </html>

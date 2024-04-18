@@ -30,6 +30,94 @@ body{
     background-color: #e8d9bf;
 }
 
+.header_nav-sp{
+  display: none;
+}
+
+.hamburger{
+  display: none;
+}
+
+@media screen and (max-width:1000px){
+  .header_nav{
+    display: none;
+  }
+  .hamburger{
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    z-index: 9999;
+  }
+  .hamburger span{
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 15px;
+    transition: .3s;
+  }
+
+  .hamburger span::before{
+width: 30px;
+height: 2px;
+background-color: #fff;
+position: absolute;
+content: "";
+top: -12px;
+transition: .3s;
+
+  }
+  .hamburger span::after{
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+position: absolute;
+content: "";
+bottom: -12px;
+transition: .3s;
+
+  }
+.open span{
+  background-color: transparent;
+}
+  .open span::before{
+transform: rotate(45deg);
+top: 0;
+  }
+
+  .open span::after{
+    transform: rotate(-45deg);
+    bottom: 0;
+  }
+
+  .header_nav-sp{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000b3;
+  }
+  .header_nav-sp ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .header_nav-sp li{
+    color: #fff;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+    "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  }
+}
+
+
+
+
 .greeting{
     margin: 100px auto;
     text-align: center;
@@ -181,9 +269,10 @@ margin-bottom: 25px;
   }
 
   .map{
+    box-sizing: border-box;
     max-width: 100%;
     height: 471px;
-    width: 99.7%;
+    width: 100%;
     filter: grayscale(100%) invert(92%) contrast(83%);
   }
 
@@ -192,16 +281,16 @@ margin-bottom: 25px;
 .contact{
     background-color: white;
     display: flex;
-
+margin: auto;
 }
 
-.contact>h4{
-    margin-top: 80px;
+.contact>h4>img{
+    margin-top: 50px;
 }
 
 .contact>ul{
     margin-top: 85px;
-    margin-left: 84.4px;
+    margin-left: 68px;
 }
 
 .contact>ul>li{
@@ -210,7 +299,6 @@ margin-bottom: 25px;
 
 #footer{
     background-color: white;
-    padding-top: 79px;
     padding-bottom: 79px;
 }
 
@@ -227,3 +315,124 @@ margin-bottom: 25px;
    width: 125px;
 }
 
+@media screen and (max-width:1100px){
+  .greeting>h1{font-size: 70px;}
+  .aboutus .subtitle{font-size: 36px;}
+}
+
+@media screen and (max-width:767px){
+  .greeting>h1{font-size: 65px;}
+  .aboutus{display: block;}
+  .aboutus>figure{
+    border-radius: 0 0 0 0;
+    width: 40%;
+  margin: auto;}
+  .maintitle{
+    width: 100%;
+    margin-top: 15px;
+}
+  .aboutus .right {
+    padding-left: 0px;
+    width: 100%;
+  }
+  .aboutus .subtitle{
+margin-left: 20px;
+margin-right: 73px;
+  }
+  .aboutus .text{
+    margin: 0 20px;
+  }
+  #menu>h2{
+    width: 22%;
+    margin: auto;
+margin-top: 55px;
+margin-bottom: 23px;
+  }
+  #menu>ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #menu>ul>li{
+    width: 80%;
+}
+#menu>ul>li>h3{
+  color: #c6171e;
+  font-size: 50px;
+  margin-top: -18px;
+}
+#menu>ul>li>p{
+  font-size: 25px;
+  line-height: 1.47em;
+  font-weight: lighter;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+#gallery>h2{
+  width: 36%;
+  margin: auto;
+margin-top: 43px;
+margin-bottom: 20px;
+}
+.box{
+  width: 93%;
+}
+#event>.box>dl{
+display: flex;
+flex-direction: column;
+align-items: baseline;
+margin: 20px 27px 19px;
+}
+#event dt {
+  font-size: 30px;
+  width: 20%;
+  padding: 0px;
+  margin-bottom: 6px;
+}
+#event dd {
+  font-size: 30px;
+  text-decoration: underline;
+ padding: 0px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+#access>h2{
+  width: 31%;
+  margin: auto;
+  margin-top: 32px;
+  margin-bottom: 10px;
+}
+.map{
+  height: 190px;
+}
+.contact{
+  display: block;
+  margin-left: 20px;
+  width: 100%;
+}
+.contact>h4>img{
+  margin-top: 45px;
+  width: 100%;
+}
+.contact>ul{
+  margin-top: 35px;
+  margin-left: 0px;
+}
+.contact>ul>li{
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+.footer_inner>p{
+  font-size: 16px;
+  text-align: center;
+  margin-top: 43px;
+  margin-bottom: 30px;
+}
+.to-pagetop{
+  position: fixed;
+  bottom: 200px;
+  right: 10px;
+  width: 125px;
+}
+
+}
