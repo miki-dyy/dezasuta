@@ -321,7 +321,7 @@ margin: auto;
 }
 
 @media screen and (max-width:767px){
-  .greeting>h1{font-size: 65px;}
+  .greeting>h1{font-size: 38px;}
   .aboutus{display: block;}
   .aboutus>figure{
     border-radius: 0 0 0 0;
@@ -358,11 +358,11 @@ margin-bottom: 23px;
 }
 #menu>ul>li>h3{
   color: #c6171e;
-  font-size: 50px;
+  font-size: 40px;
   margin-top: -18px;
 }
 #menu>ul>li>p{
-  font-size: 25px;
+  font-size: 17px;
   line-height: 1.47em;
   font-weight: lighter;
   margin-top: 30px;
@@ -384,17 +384,20 @@ align-items: baseline;
 margin: 20px 27px 19px;
 }
 #event dt {
-  font-size: 30px;
+  font-size: 16px;
   width: 20%;
   padding: 0px;
   margin-bottom: 6px;
 }
 #event dd {
-  font-size: 30px;
+  font-size: 16px;
   text-decoration: underline;
  padding: 0px;
   margin-bottom: 20px;
   width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 #access>h2{
   width: 31%;
@@ -415,11 +418,11 @@ margin: 20px 27px 19px;
   width: 100%;
 }
 .contact>ul{
-  margin-top: 35px;
+  margin-top: 18px;
   margin-left: 0px;
 }
 .contact>ul>li{
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   font-size: 20px;
 }
 .footer_inner>p{
@@ -428,9 +431,12 @@ margin: 20px 27px 19px;
   margin-top: 43px;
   margin-bottom: 30px;
 }
+#footer{
+  padding: 0 0 30px;
+}
 .to-pagetop{
   position: fixed;
-  bottom: 200px;
+  bottom: 230px;
   right: 10px;
   width: 125px;
 }
