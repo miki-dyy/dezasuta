@@ -410,16 +410,16 @@ margin: 20px 27px 19px;
 }
 .contact{
   display: block;
-  margin-left: 20px;
   width: 100%;
 }
 .contact>h4>img{
   margin-top: 45px;
+  margin-left: 20px;
   width: 100%;
 }
 .contact>ul{
   margin-top: 18px;
-  margin-left: 0px;
+  margin-left: 20px;
 }
 .contact>ul>li{
   margin-bottom: 18px;
