@@ -8,6 +8,7 @@
     padding-left: 2.512%;
     position: absolute;
     width: 100%;
+    z-index: 2;
 }
 
 .header_nav ul{
@@ -123,21 +124,23 @@ top: 0;
     text-align: center;
 }
 
-.happy{
-    margin-bottom: 51px;
+.greeting .happy{
+    margin-top: 98px;
+  margin-bottom: 51px;
     font-size: 30px;
 }
 
-.greeting>h1{
+.greeting .happy2{
     font-size: 82px;
     line-height: 1.2em;
     font-weight: lighter;
+    margin-bottom: 53px;
 }
 
-.greeting>p{
+.greeting .happy3{
     font-size: 23px;
     line-height: 1.65em;
-    margin-top: 55px;
+    margin-bottom: 105px;
 }
 
 
@@ -321,7 +324,17 @@ margin: auto;
 }
 
 @media screen and (max-width:767px){
-  .greeting>h1{font-size: 38px;}
+  .greeting .happy{
+    font-size: 17px;
+  }
+  .greeting .happy2{
+    font-size: 38px;
+  }
+  .greeting .happy3{
+  
+    font-size: 16px;
+    margin: 0 20px 66px;
+  }
   .aboutus{display: block;}
   .aboutus>figure{
     border-radius: 0 0 0 0;
@@ -340,7 +353,7 @@ margin-left: 20px;
 margin-right: 73px;
   }
   .aboutus .text{
-    margin: 0 20px;
+    margin: 0 20px 56px;
   }
   #menu>h2{
     width: 22%;
@@ -371,7 +384,7 @@ margin-bottom: 23px;
 #gallery>h2{
   width: 36%;
   margin: auto;
-margin-top: 43px;
+margin-top: 48px;
 margin-bottom: 20px;
 }
 .box{
@@ -442,3 +455,32 @@ margin: 20px 27px 19px;
 }
 
 }
+
+.slick-dots {
+  bottom: 0;
+}
+
+.slick-dots li.slick-active button:before{
+  color: #fff;
+}
+
+.slick-dots li button:before{
+  color: #fff;
+}
+
+
+.slider {
+  margin: 0 auto;
+  max-width: 500px;
+  width: 80%;
+}
+.slider-img {
+  margin: 0 5px;
+}
+.slider-img img {
+  height: auto;
+  width: 100%;
+}
+
+
+
