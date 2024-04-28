@@ -483,4 +483,12 @@ margin: 20px 27px 19px;
 }
 
 
-
+.slider2 {
+  margin: 0 auto;
+  max-width: 500px;
+  width: 80%;
+}
+.slider2 img {
+  height: auto;
+  width: 100%;
+}

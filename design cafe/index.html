@@ -145,15 +145,26 @@
 
         <section id="gallery">
             <h2><img src="./images/gallery@2x.png" alt="Galleryタイトル"></h2>
-            <ul>
-                <li><img src="./images/pc_gallary_05-100.jpg" alt=""></li>
-                <li><img src="./images/pc_gallary_04-100.jpg" alt=""></li>
-                <li><img src="./images/pc_gallary_03-100.jpg" alt=""></li>
-                <li><img src="./images/pc_gallary_02-100.jpg" alt=""></li>
-                <li><img src="./images/pc_gallary_01-100.jpg" alt=""></li>
-                <li><img src="./images/pc_gallary_03-100.jpg" alt=""></li>
-            </ul>
-
+            <div class="slider2">
+                <div>
+                    <img src="images/pc_gallary_01-100.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/pc_gallary_02-100.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/pc_gallary_03-100.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/pc_gallary_04-100.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/pc_gallary_05-100.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/pc_gallary_05-100.jpg" alt="">
+                </div>
+            </div>
 
         </section>
 
@@ -207,13 +218,27 @@
                 $(".header_nav-sp").fadeToggle();
             });
             $(".slider").slick({
-                // autoplay: true,
-                // autoplaySpeed: 3000,
+                autoplay: true,
+                autoplaySpeed: 3000,
                 arrows: false,
                 dots: true
             });
+            $(".slider2").slick({
+                arrows: false,
+                autoplay: true,
+                adaptiveHeight: true,
+                dots: true,
+                slidesToShow: 5,
+                responsive: [
+                    {
+                        breakpoint: 767, // 399px以下のサイズに適用
+                        settings: {
+                            slidesToShow: 1,
+                        },
+                    },
+                ],
+            });
         });
-
 
 
 
