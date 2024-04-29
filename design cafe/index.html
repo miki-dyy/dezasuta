@@ -14,9 +14,13 @@
 
     <link rel="stylesheet" href="./css/style.css">
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-</head>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"
+        type="text/javascript"></script>
 
 <body>
     <header id="header">
@@ -145,26 +149,39 @@
 
         <section id="gallery">
             <h2><img src="./images/gallery@2x.png" alt="Galleryタイトル"></h2>
-            <div class="slider2">
-                <div>
-                    <img src="images/pc_gallary_05-100.jpg" alt="">
-                </div>
-                <div>
-                    <img src="images/pc_gallary_04-100.jpg" alt="">
-                </div>
-                <div>
-                    <img src="images/pc_gallary_03-100.jpg" alt="">
-                </div>
-                <div>
-                    <img src="images/pc_gallary_02-100.jpg" alt="">
-                </div>
-                <div>
-                    <img src="images/pc_gallary_01-100.jpg" alt="">
-                </div>
-                <div>
-                    <img src="images/pc_gallary_04-100.jpg" alt="">
-                </div>
-            </div>
+            <ul class="slider2">
+                <li>
+                    <a href="images/pc_gallary_05-100.jpg" data-lightbox="gallery" data-title="店内ご利用のお客様の様子">
+                        <img src="images/pc_gallary_05-100.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="images/pc_gallary_04-100.jpg" data-lightbox="gallery" data-title="当店焙煎のコーヒー豆">
+                        <img src="images/pc_gallary_04-100.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="images/pc_gallary_03-100.jpg" data-lightbox="gallery" data-title="店内客席の様子">
+                        <img src="images/pc_gallary_03-100.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="images/pc_gallary_02-100.jpg" data-lightbox="gallery" data-title="当店入り口">
+                        <img src="images/pc_gallary_02-100.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="images/pc_gallary_01-100.jpg" data-lightbox="gallery" data-title="当店オリジナルカフェラテ">
+                        <img src="images/pc_gallary_01-100.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="images/pc_gallary_04-100.jpg" data-lightbox="gallery" data-title="当店焙煎のコーヒー豆">
+                        <img src="images/pc_gallary_04-100.jpg" alt="">
+                    </a>
+                </li>
+
+            </ul>
 
         </section>
 
@@ -226,8 +243,8 @@
             $(".slider2").slick({
                 arrows: false,
                 autoplay: true,
+                autoplaySpeed: 3000,
                 adaptiveHeight: true,
-
                 slidesToShow: 5,
                 responsive: [
                     {

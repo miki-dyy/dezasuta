@@ -469,3 +469,23 @@ margin: 20px 27px 19px;
 }
 
 
+/*lightbox追記修正*/
+.lightboxOverlay{/*拡大時のモーダル*/
+  width:100% !important;
+}
+.lb-outerContainer,.lb-dataContainer{
+  width:calc(100% - 20px) !important;
+  max-width:600px;/*拡大時の最大幅*/
+}
+.lb-outerContainer{
+  height:auto !important;
+  margin-left:auto;
+  margin-right:auto;
+}
+.lb-image{
+  width:100% !important;
+  height:auto !important;
+}
+
+
+
